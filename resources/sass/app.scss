@@ -131,7 +131,6 @@ body {
 #site_main {
     background-color: $brand_dark_color;
     color: #fff;
-    padding-bottom: 1rem;
 
     .jumbotron {
         width: 100%;
@@ -228,6 +227,107 @@ body {
                     font-size: 0.9rem;
                     text-transform: uppercase;
                     padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* Footer */
+#site_footer {
+    font-family: 'Roboto',
+        sans-serif;
+
+    .footer_top {
+        background-image: url(../img/footer-bg.jpg);
+
+        .container {
+            background-image: url(../img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: right;
+            padding: 2rem 0 3rem 0;
+
+            .row {
+                &>div {
+                    padding-right: 2rem;
+
+                    h3 {
+                        color: #fff;
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                        margin: 1rem 0;
+                    }
+
+                    ul {
+                        list-style: none;
+
+                        li a {
+                            color: grey;
+                            font-size: 0.8rem;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .credit {
+                padding-top: 1rem;
+                color: grey;
+                font-size: 0.8rem;
+
+                a {
+                    color: $brand_primary_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        background-color: $brand_grey_color;
+        padding: 3rem 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .sign_up {
+                padding: 0.8rem 0;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 0.8rem;
+                    border: 2px solid $brand_primary_color;
+                }
+
+                &:hover {
+                    background-color: $brand_primary_color;
+                    transition: 0.2s linear;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+
+                h3 {
+                    color: $brand_primary_color;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    margin-left: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        filter: opacity(0.8);
+                        transition: 0.2s linear;
+                    }
                 }
             }
         }

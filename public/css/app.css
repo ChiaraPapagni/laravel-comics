@@ -102,7 +102,6 @@ body {
 #site_main {
   background-color: #1c1c1c;
   color: #fff;
-  padding-bottom: 1rem;
 }
 #site_main .jumbotron {
   width: 100%;
@@ -193,4 +192,84 @@ body {
   font-size: 0.9rem;
   text-transform: uppercase;
   padding-left: 1rem;
+}
+
+/* Footer */
+#site_footer {
+  font-family: "Roboto", sans-serif;
+}
+#site_footer .footer_top {
+  background-image: url(../img/footer-bg.jpg);
+}
+#site_footer .footer_top .container {
+  background-image: url(../img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  padding: 2rem 0 3rem 0;
+}
+#site_footer .footer_top .container .row > div {
+  padding-right: 2rem;
+}
+#site_footer .footer_top .container .row > div h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+#site_footer .footer_top .container .row > div ul {
+  list-style: none;
+}
+#site_footer .footer_top .container .row > div ul li a {
+  color: grey;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+#site_footer .footer_top .container .credit {
+  padding-top: 1rem;
+  color: grey;
+  font-size: 0.8rem;
+}
+#site_footer .footer_top .container .credit a {
+  color: #0282f9;
+  text-decoration: none;
+}
+#site_footer .footer_bottom {
+  background-color: #303030;
+  padding: 3rem 0;
+}
+#site_footer .footer_bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site_footer .footer_bottom .container .sign_up {
+  padding: 0.8rem 0;
+}
+#site_footer .footer_bottom .container .sign_up a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border: 2px solid #0282f9;
+}
+#site_footer .footer_bottom .container .sign_up:hover {
+  background-color: #0282f9;
+  transition: 0.2s linear;
+}
+#site_footer .footer_bottom .container .social {
+  display: flex;
+  align-items: center;
+}
+#site_footer .footer_bottom .container .social h3 {
+  color: #0282f9;
+  text-transform: uppercase;
+}
+#site_footer .footer_bottom .container .social img {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#site_footer .footer_bottom .container .social img:hover {
+  filter: opacity(0.8);
+  transition: 0.2s linear;
 }
