@@ -30,6 +30,7 @@ body {
     flex-wrap: wrap;
 }
 
+
 /* Header */
 #site_header {
 
@@ -121,6 +122,114 @@ body {
                 margin-left: 0.3rem;
             }
 
+        }
+    }
+}
+
+
+/* Main */
+#site_main {
+    background-color: $brand_dark_color;
+    color: #fff;
+    padding-bottom: 1rem;
+
+    .jumbotron {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .container {
+        position: relative;
+
+        h2 {
+            display: inline-block;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+            background-color: $brand_primary_color;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.7rem 2rem;
+        }
+
+        .row {
+            justify-content: center;
+            gap: 1rem;
+            padding-top: 3rem;
+
+            .comics_card {
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                p {
+                    width: 200px;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    padding: 1rem 0 2rem 0;
+                }
+            }
+        }
+    }
+
+    .load_more {
+        width: 200px;
+        margin: auto;
+        background-color: $brand_primary_color;
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.7rem 0;
+        cursor: pointer;
+    }
+
+    .row_cards {
+        width: 100%;
+        background-color: $brand_primary_color;
+        margin-top: 1.3rem;
+        padding: 3rem 0;
+        color: #fff;
+
+        img {
+            height: 50px;
+        }
+
+        li:last-child img {
+            height: 40px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 0 2rem;
+
+                p {
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    padding-left: 1rem;
+                }
+            }
         }
     }
 }

@@ -7,12 +7,8 @@
 
     <title>Comics | DC</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
-    @yield('custom-css')
 </head>
 
 <body>
@@ -20,7 +16,7 @@
     @include('partials.header')
     <!-- /#site_header -->
 
-    <main id="site_main" class="py-5">
+    <main id="site_main">
         @yield('content')
     </main>
     <!-- /#site_main -->
@@ -28,8 +24,6 @@
     @include('partials.footer')
     <!-- /#site_footer -->
 
-    <!-- Scripts 
-    @yield('custom-js')-->
 </body>
 
 </html>

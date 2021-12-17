@@ -97,3 +97,100 @@ body {
   width: 17px;
   margin-left: 0.3rem;
 }
+
+/* Main */
+#site_main {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+#site_main .jumbotron {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#site_main .container {
+  position: relative;
+}
+#site_main .container h2 {
+  display: inline-block;
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  background-color: #0282f9;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.7rem 2rem;
+}
+#site_main .container .row {
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+#site_main .container .row .comics_card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#site_main .container .row .comics_card img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#site_main .container .row .comics_card p {
+  width: 200px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 1rem 0 2rem 0;
+}
+#site_main .load_more {
+  width: 200px;
+  margin: auto;
+  background-color: #0282f9;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.7rem 0;
+  cursor: pointer;
+}
+#site_main .row_cards {
+  width: 100%;
+  background-color: #0282f9;
+  margin-top: 1.3rem;
+  padding: 3rem 0;
+  color: #fff;
+}
+#site_main .row_cards img {
+  height: 50px;
+}
+#site_main .row_cards li:last-child img {
+  height: 40px;
+}
+#site_main .row_cards ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#site_main .row_cards ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+#site_main .row_cards ul li p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
