@@ -59,7 +59,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
 
 
         img.logo {
@@ -78,7 +78,7 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
                 margin: 0 1rem;
-                padding: 2rem 0;
+                padding: 2.65rem 0;
 
                 &.active {
                     color: $brand_primary_color;
@@ -127,17 +127,21 @@ body {
 }
 
 
+.jumbotron {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Main */
 #site_main {
     background-color: $brand_dark_color;
+    margin: -0.3rem;
     color: #fff;
-
-    .jumbotron {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: top;
-    }
 
     .container {
         position: relative;

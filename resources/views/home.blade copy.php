@@ -2,6 +2,7 @@
 
 @section('content')
 
+<img src="{{asset('img/jumbotron.jpg')}}" class="jumbotron" />
 <section class="container">
     <h2>Current Series</h2>
     <div class="comics_cards row">

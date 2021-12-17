@@ -34,5 +34,9 @@
         </div>
     </nav>
     <!-- /.navbar -->
+
 </header>
 <!-- /#site_header -->
+
+@include('partials.jumbotron')
+<!-- /jumbotron -->
