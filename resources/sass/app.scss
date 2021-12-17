@@ -16,6 +16,8 @@ $brand_dark_color: #1c1c1c;
 
 /* Utility */
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Roboto Condensed', 'Arial',
         sans-serif;
 }
@@ -165,6 +167,11 @@ body {
             justify-content: center;
             gap: 1rem;
             padding-top: 3rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
 
             .comics_card {
                 width: -webkit-fit-content;

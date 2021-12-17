@@ -8,10 +8,12 @@
 
         @foreach($comics as $comic)
 
-        <div class="comics_card">
-            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
-            <p>{{ $comic['title'] }}</p>
-        </div>
+        <a href="{{route('comic')}}">
+            <div class="comics_card">
+                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+                <p>{{ $comic['title'] }}</p>
+            </div>
+        </a>
         <!-- /.comics_card -->
 
         @endforeach

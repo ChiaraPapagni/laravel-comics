@@ -9,6 +9,8 @@
 
 /* Utility */
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
@@ -136,6 +138,10 @@ body {
   justify-content: center;
   gap: 1rem;
   padding-top: 3rem;
+}
+#site_main .container .row a {
+  color: white;
+  text-decoration: none;
 }
 #site_main .container .row .comics_card {
   width: -webkit-fit-content;
