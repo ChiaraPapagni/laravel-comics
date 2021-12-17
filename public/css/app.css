@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Condensed:wght@300;400&display=swap);/* Variables */
+/* Fonts */
+/* Reset Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility */
+body {
+  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+#site_header {
+  padding: 1.2rem 0;
+}
+#site_header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site_header img {
+  width: 80px;
+  height: 80px;
+}
+#site_header ul {
+  display: flex;
+  list-style: none;
+}
+#site_header ul a {
+  color: #464646;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  padding: 2.9rem 0;
+}
+#site_header ul a.active {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+}

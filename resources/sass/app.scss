@@ -1,0 +1,57 @@
+/* Variables */
+$brand_primary_color: #0282f9;
+$brand_text_grey: #464646;
+$brand_grey_color: #303030;
+$brand_dark_color: #1c1c1c;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Condensed:wght@300;400&display=swap");
+
+/* Reset Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility */
+body {
+    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold",
+        "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+#site_header {
+    padding: 1.2rem 0;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        a {
+            color: $brand_text_grey;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 1rem;
+            padding: 2.9rem 0;
+
+            &.active {
+                color: $brand_primary_color;
+                border-bottom: 4px solid $brand_primary_color;
+            }
+        }
+    }
+}
