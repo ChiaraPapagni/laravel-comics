@@ -5,7 +5,7 @@ $brand_grey_color: #303030;
 $brand_dark_color: #1c1c1c;
 
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap');
 
 /* Reset Rules */
 * {
@@ -16,42 +16,111 @@ $brand_dark_color: #1c1c1c;
 
 /* Utility */
 body {
-    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold",
-        "Roboto Condensed", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto Condensed', 'Arial',
+        sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Header */
 #site_header {
-    padding: 1.2rem 0;
+
+    .top_header {
+        background-color: $brand_primary_color;
+        color: #fff;
+        font-family: 'Roboto',
+            sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0.35rem 0;
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            p {
+                margin-left: 7rem;
+            }
+        }
+    }
 
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+        padding: 1.2rem 0;
 
-    img {
-        width: 80px;
-        height: 80px;
-    }
 
-    ul {
-        display: flex;
-        list-style: none;
+        img.logo {
+            width: 80px;
+            height: 80px;
+        }
 
-        a {
-            color: $brand_text_grey;
-            font-size: 0.85rem;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin: 0 1rem;
-            padding: 2.9rem 0;
+        ul {
+            display: flex;
+            list-style: none;
 
-            &.active {
-                color: $brand_primary_color;
-                border-bottom: 4px solid $brand_primary_color;
+            a {
+                color: $brand_text_grey;
+                font-size: 0.95rem;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin: 0 1rem;
+                padding: 2rem 0;
+
+                &.active {
+                    color: $brand_primary_color;
+                    border-bottom: 4px solid $brand_primary_color;
+                }
+
+                &:hover {
+                    color: $brand_primary_color;
+                    border-bottom: 4px solid $brand_primary_color;
+                    transition: 0.2s linear;
+                }
             }
+
+            .shop {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    top: 0.3rem;
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+
+        .search {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-weight: bold;
+            border-bottom: 2px solid $brand_primary_color;
+
+            p {
+                padding-left: 2.5rem;
+                padding-bottom: 0.5rem;
+            }
+
+            img {
+                width: 17px;
+                margin-left: 0.3rem;
+            }
+
         }
     }
 }

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Condensed:wght@300;400&display=swap);/* Variables */
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap);/* Variables */
 /* Fonts */
 /* Reset Rules */
 * {
@@ -9,36 +9,91 @@
 
 /* Utility */
 body {
-  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Header */
-#site_header {
-  padding: 1.2rem 0;
+#site_header .top_header {
+  background-color: #0282f9;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.35rem 0;
+}
+#site_header .top_header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#site_header .top_header .container p {
+  margin-left: 7rem;
 }
 #site_header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.2rem 0;
 }
-#site_header img {
+#site_header .navbar img.logo {
   width: 80px;
   height: 80px;
 }
-#site_header ul {
+#site_header .navbar ul {
   display: flex;
   list-style: none;
 }
-#site_header ul a {
+#site_header .navbar ul a {
   color: #464646;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 1rem;
-  padding: 2.9rem 0;
+  padding: 2rem 0;
 }
-#site_header ul a.active {
+#site_header .navbar ul a.active {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
+}
+#site_header .navbar ul a:hover {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+  transition: 0.2s linear;
+}
+#site_header .navbar ul .shop {
+  position: relative;
+}
+#site_header .navbar ul .shop img {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0.3rem;
+  margin-left: 0.3rem;
+}
+#site_header .navbar .search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid #0282f9;
+}
+#site_header .navbar .search p {
+  padding-left: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+#site_header .navbar .search img {
+  width: 17px;
+  margin-left: 0.3rem;
 }
