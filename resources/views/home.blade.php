@@ -6,8 +6,8 @@
     <h2>Current Series</h2>
     <div class="comics_cards row">
 
-        @foreach($comics as $comic)
-
+        @foreach($comics as $index=>$comic)
+        <!-- <a href="{{--route('comic'),['id' => $comics[$index + 1]]--}}"> -->
         <a href="{{route('comic')}}">
             <div class="comics_card">
                 <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
