@@ -4,25 +4,27 @@
 
 @section('content')
 
-<section class="container">
-    <h2>Current Series</h2>
-    <div class="comics_cards row">
+<div class="comics">
+    <div class="container">
+        <h2>Current Series</h2>
+        <div class="comics_cards row">
 
-        @foreach($comics as $index=>$comic)
-        <a href="{{route('comic', ['id' => $index])}}">
-            <div class="comics_card">
-                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
-                <p>{{ $comic['series'] }}</p>
-            </div>
-        </a>
-        <!-- /.comics_card -->
+            @foreach($comics as $index=>$comic)
+            <a href="{{route('comic', ['id' => $index])}}">
+                <div class="comics_card">
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+                    <p>{{ $comic['series'] }}</p>
+                </div>
+            </a>
+            <!-- /.comics_card -->
 
-        @endforeach
+            @endforeach
+        </div>
+        <!-- /.comics_cards -->
+
+        <p class="load_more">Load more</p>
     </div>
-    <!-- /.comics_cards -->
-
-    <p class="load_more">Load more</p>
-</section>
+</div>
 <!-- /.container -->
 
 <div class="row_cards">

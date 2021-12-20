@@ -23,7 +23,7 @@ Route::get('/characters', function () {
 /* Comics Route */
 Route::get('/comics', function () {
     $comics = config('db.comics');
-    return view('comics', compact('comics'));
+    return view('comics.comics', compact('comics'));
 })->name('comics');
 
 Route::get('/movies', function () {
@@ -63,7 +63,7 @@ Route::get('comics/{id}', function ($id) {
     $comics = config('db.comics');
 
     if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
-        $comic = $comics['id'];
+        $comic = $comics[$id];
         return view('comics.show', compact('comic'));
     } else {
         abort(404);

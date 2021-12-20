@@ -103,9 +103,12 @@
 
 /* Main */
 #site_main {
-    background-color: $brand_dark_color;
-    margin: -0.3rem;
-    color: #fff;
+    .comics {
+        background-color: $brand_dark_color;
+        margin: -0.3rem;
+        color: #fff;
+        padding-bottom: 1.7rem;
+    }
 
     .container {
         position: relative;
@@ -113,7 +116,7 @@
         h2 {
             display: inline-block;
             position: absolute;
-            top: -2rem;
+            top: -1.7rem;
             left: -1rem;
             background-color: $brand_primary_color;
             color: #fff;
@@ -174,7 +177,6 @@
     .row_cards {
         width: 100%;
         background-color: $brand_primary_color;
-        margin-top: 1.3rem;
         padding: 3rem 0;
         color: #fff;
 
@@ -206,7 +208,7 @@
     }
 
     .buy {
-        background-color: #f6f6f6;
+        background-color: $brand_light_grey;
         color: #999;
         font-size: 0.85rem;
         font-weight: bold;
@@ -214,6 +216,7 @@
         border-top: 1px solid #D8D8D8;
 
         .container {
+            width: 69%;
             display: flex;
             justify-content: center;
 
@@ -224,8 +227,11 @@
                 gap: 6rem;
                 padding: 1rem;
                 margin: 0;
-                margin-bottom: 0.3rem;
-                border: 1px solid #D8D8D8;
+                border-left: 1px solid #D8D8D8;
+
+                &.subscriptions {
+                    border-right: 1px solid #D8D8D8;
+                }
             }
         }
     }
@@ -326,6 +332,181 @@
                         filter: opacity(0.8);
                         transition: 0.2s linear;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+/* Single comic */
+#site_main .comic_detail {
+    background-color: #fff;
+
+    .poster_wrapper {
+        height: 4.875rem;
+        background-color: $brand_primary_color;
+        margin-top: -0.3rem;
+        padding: 0;
+        position: relative;
+
+        .container {
+            width: 55%;
+            margin: auto;
+
+            .poster_image {
+                position: absolute;
+                bottom: -3.5rem;
+                border: 1px solid #fff;
+
+                img {
+                    position: relative;
+                }
+            }
+
+            .poster_info {
+                color: #fff;
+                font-size: 0.75rem;
+                text-align: center;
+                text-transform: uppercase;
+
+
+                &>p {
+                    padding: 0.2rem 0.4rem;
+                }
+
+                .comic_type {
+                    position: absolute;
+                    top: 0;
+                    background-color: $brand_light_blue;
+                }
+
+                .comic_view {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $brand_light_blue;
+                }
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+        color: #555;
+        padding-bottom: 4rem;
+
+        &.container {
+            width: 55%;
+            margin: 2rem auto;
+        }
+
+        .comic_info {
+            font-family: 'Roboto', Arial, sans-serif;
+            padding-right: 2.5rem;
+
+            h1 {
+                font-family: 'Roboto Condensed', Arial, sans-serif;
+                color: $brand_blue;
+                font-size: 1.9rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            .table {
+                display: flex;
+                align-items: center;
+                background-color: $brand_green;
+                color: #fff;
+                font-size: 0.95rem;
+                font-weight: 500;
+                border-bottom: 1px solid $brand_dark_green;
+                margin-bottom: 1rem;
+
+                .comic_price {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.7rem 1rem;
+                    border-right: 1px solid $brand_dark_green;
+                }
+
+                .comic_availability {
+                    width: 20%;
+                    text-align: center;
+                    padding: 0.7rem 1rem;
+                }
+            }
+
+            p {
+                font-size: 0.95rem;
+                font-weight: 500;
+                line-height: 1.5rem;
+            }
+        }
+
+        .adv>p {
+            font-weight: 600;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+
+    .more_details {
+        background-color: $brand_light_grey;
+        padding-bottom: 5rem;
+        border-top: 1px solid #D8D8D8;
+
+        &>.container {
+            display: flex;
+            width: 55%;
+            margin: auto;
+            gap: 3rem;
+
+            &>.col {
+                width: 50%;
+
+                h3 {
+                    color: $brand_blue;
+                    font-size: 1.3rem;
+                    padding: 2rem 0;
+                }
+
+                &>div {
+                    display: flex;
+                    font-family: 'Roboto', Arial,
+                        sans-serif;
+                    font-size: 0.8rem;
+                    padding: 0.5rem 0;
+
+                    p {
+                        width: 30%;
+                        color: $brand_blue;
+                        font-weight: 500;
+                    }
+
+                    span {
+                        color: $brand_light_blue;
+                    }
+
+                    .artist,
+                    .writer {
+                        width: 70%;
+                    }
+                }
+
+                .artists,
+                .writers,
+                .series,
+                .us_price,
+                .on_sale {
+                    border-top: 1px solid #D8D8D8;
+                }
+
+                .writers,
+                .on_sale {
+                    border-bottom: 1px solid #D8D8D8;
                 }
             }
         }

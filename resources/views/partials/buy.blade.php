@@ -12,7 +12,7 @@
             Comic shop locator
             <img src="{{asset('img/locator.png')}}">
         </div>
-        <div>
+        <div class="subscriptions">
             subscriptions
             <img src="{{asset('img/subscription.png')}}">
         </div>
