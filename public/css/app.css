@@ -1,19 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap);/* Variables */
-/* Fonts */
-/* Reset Rules */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Utility */
-body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-}
-
 .container {
   width: 70%;
   margin: auto;
@@ -24,6 +9,20 @@ body {
   flex-wrap: wrap;
 }
 
+/* Reset Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+/* Fonts */
 /* Header */
 #site_header .top_header {
   background-color: #0282f9;
@@ -66,23 +65,12 @@ body {
   padding: 2.65rem 0;
 }
 #site_header .navbar ul a.active {
-  color: #0282f9;
   border-bottom: 4px solid #0282f9;
 }
 #site_header .navbar ul a:hover {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
   transition: 0.2s linear;
-}
-#site_header .navbar ul .shop {
-  position: relative;
-}
-#site_header .navbar ul .shop img {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 0.3rem;
-  margin-left: 0.3rem;
 }
 #site_header .navbar .search {
   display: flex;
@@ -92,7 +80,7 @@ body {
   border-bottom: 2px solid #0282f9;
 }
 #site_header .navbar .search p {
-  padding-left: 2.5rem;
+  padding-left: 4rem;
   padding-bottom: 0.5rem;
 }
 #site_header .navbar .search img {

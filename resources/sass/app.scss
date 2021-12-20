@@ -1,36 +1,11 @@
-/* Variables */
-$brand_primary_color: #0282f9;
-$brand_text_grey: #464646;
-$brand_grey_color: #303030;
-$brand_dark_color: #1c1c1c;
+@import 'partials/variables';
+
+@import 'partials/common';
+
+@import 'partials/utility';
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap');
-
-/* Reset Rules */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Utility */
-body {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Roboto Condensed', 'Arial',
-        sans-serif;
-}
-
-.container {
-    width: 70%;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
 /* Header */
@@ -83,7 +58,6 @@ body {
                 padding: 2.65rem 0;
 
                 &.active {
-                    color: $brand_primary_color;
                     border-bottom: 4px solid $brand_primary_color;
                 }
 
@@ -91,18 +65,6 @@ body {
                     color: $brand_primary_color;
                     border-bottom: 4px solid $brand_primary_color;
                     transition: 0.2s linear;
-                }
-            }
-
-            .shop {
-                position: relative;
-
-                img {
-                    position: absolute;
-                    width: 8px;
-                    height: 8px;
-                    top: 0.3rem;
-                    margin-left: 0.3rem;
                 }
             }
         }
@@ -115,7 +77,7 @@ body {
             border-bottom: 2px solid $brand_primary_color;
 
             p {
-                padding-left: 2.5rem;
+                padding-left: 4rem;
                 padding-bottom: 0.5rem;
             }
 

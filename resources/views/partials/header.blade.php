@@ -8,24 +8,27 @@
     <!-- /.top_header -->
 
     <nav class="navbar container">
-        <img src="{{asset('img/dc-logo.png')}}" alt="DC Comics" class="logo" />
+        <a href="/">
+            <img src="{{asset('img/dc-logo.png')}}" alt="DC Comics" class="logo" />
+        </a>
 
         <ul>
-            <li><a href="">Characters</a></li>
-            <li><a href="" class="active">Comics</a></li>
-            <li><a href="">Movies</a></li>
-            <li><a href="">Tv</a></li>
-            <li><a href="">Games</a></li>
-            <li><a href="">Collectibles</a></li>
-            <li><a href="">Video</a></li>
-            <li><a href="">Fans</a></li>
-            <li><a href="">News</a></li>
-            <li class="shop">
-                <a href="">
-                    Shop
+            @foreach(config('db.menu') as $item)
+            <li>
+                @if ($loop->last)
+                <a href="{{ route($item['href']) }}"
+                    class="{{ Route::currentRouteName() === $item['href'] ? 'active' : '' }}">
+                    {{ $item['text']}}
                     <img src="{{asset('img/down-menu.png')}}">
                 </a>
+                @else
+                <a href="{{ route($item['href']) }}"
+                    class="{{ Route::currentRouteName() === $item['href'] ? 'active' : '' }}">
+                    {{ $item['text']}}
+                </a>
+                @endif
             </li>
+            @endforeach
         </ul>
 
         <div class="search">

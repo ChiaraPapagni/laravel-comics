@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'Comics')
+
 @section('content')
 
 <section class="container">
@@ -7,11 +9,10 @@
     <div class="comics_cards row">
 
         @foreach($comics as $index=>$comic)
-        <!-- <a href="{{--route('comic'),['id' => $comics[$index + 1]]--}}"> -->
-        <a href="{{route('comic')}}">
+        <a href="{{route('comic', ['id' => $index])}}">
             <div class="comics_card">
                 <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
-                <p>{{ $comic['title'] }}</p>
+                <p>{{ $comic['series'] }}</p>
             </div>
         </a>
         <!-- /.comics_card -->
