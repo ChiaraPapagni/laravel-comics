@@ -48,7 +48,11 @@
                     <p>Art by:</p>
                     <div class="artist">
                         @foreach($comic['artists'] as $artist)
+                        @if($loop->last)
+                        <span>{{$artist}}</span>
+                        @else
                         <span>{{$artist}}</span>,
+                        @endif
                         @endforeach
                     </div>
                 </div>
@@ -56,7 +60,11 @@
                     <p>Written by:</p>
                     <div class="writer">
                         @foreach($comic['writers'] as $writer)
+                        @if($loop->last)
+                        <span>{{$writer}}</span>
+                        @else
                         <span>{{$writer}}</span>,
+                        @endif
                         @endforeach
                     </div>
                 </div>
